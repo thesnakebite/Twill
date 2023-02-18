@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\RecetaController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('site.index');
-});
+Route::get('/', [RecetaController::class, 'index'])->name('receta.index');
+Route::get('/recetas/{slug}', [RecetaController::class, 'show'])->name('receta.show');

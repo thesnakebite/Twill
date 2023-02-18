@@ -20,7 +20,7 @@
     @formField('input', [
         'name' => 'owner',
         'label' => 'Dueño',
-        'note' => 'Primer nombre e inicial del apellido'
+        'note' => 'Primer nombre e inicial del apellido',
         'maxlength' => 200
     ])
 
@@ -38,7 +38,7 @@
 
     @formField('medias', [
         'name' => 'cover',
-        'label' => 'Imagen de la receta completa',
+        'label' => 'Imagen de la receta completa'
     ])
 
 

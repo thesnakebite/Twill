@@ -16,4 +16,12 @@ class RecetaRepository extends ModuleRepository
     {
         $this->model = $model;
     }
+
+    public function allRecetas()
+    {
+        return $this->model
+            ->published()
+            ->orderBy('published')
+            ->get();
+    }
 }
