@@ -3,8 +3,8 @@
 @section('contentFields')
 
 @formField('tags', [
-    'label' => 'Skills',
-    'note' => 'HTML, Frontend, Designer, etc..' 
+    'label' => 'Especialidad',
+    'note' => 'Chef de pescados, Chef de parrilla , Chef de asados , etc..' 
 ])
 
 @formField('files', [
@@ -48,7 +48,7 @@
 ])
 
 @formField('block_editor', [
-    'label' => 'Skill Biography',
+    'label' => 'Biografía de habilidad',
     'blocks' => ['quote', 'paragraph', 'paragraph_image', 'project_detail']
 ])
 @stop
