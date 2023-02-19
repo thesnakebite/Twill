@@ -10,4 +10,29 @@ class RecetaController extends BaseModuleController
 
     protected $indexOptions = [
     ];
+
+    protected $indexColumns = [
+        'image' => [
+            'thumb' => true, // Image column
+            'variant' => [
+                'role' => 'cover',
+                'crop' => 'default',
+            ]
+        ],
+        'subtitle' =>[
+            'title' => 'Subtítulo',
+            'field' => 'subtitle',
+            'sort' => true
+        ],
+        'name' => [
+            'title' => 'title',
+            'field' => 'title',
+            'sort' => true
+        ],
+        'tagsAsString' => [
+            'title' => 'Tags',
+            'field' => 'tagsAsString',
+            'present' => true
+        ],
+    ];
 }
