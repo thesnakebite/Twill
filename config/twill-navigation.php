@@ -9,4 +9,8 @@ return [
         'title' => 'Paginas',
         'module' => true,
     ],
+    'contributors' => [
+        'title' => 'Contributors',
+        'module' => true,
+    ],
 ];

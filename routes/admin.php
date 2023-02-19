@@ -5,3 +5,4 @@ use Illuminate\Support\Facades\Route;
 // Register Twill routes here eg.
 Route::module('recetas');
 Route::module('paginas');
+Route::module('contributors');

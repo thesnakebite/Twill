@@ -14,5 +14,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/recetas', [RecetaController::class, 'index'])->name('receta.index');
+Route::get('/', [RecetaController::class, 'index'])->name('receta.index');
 Route::get('/recetas/{slug}', [RecetaController::class, 'show'])->name('receta.show');
